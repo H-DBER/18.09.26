@@ -40,11 +40,11 @@ Il y a du JSON dans les colonnes "horaires", "service", "prix" et "rupture"
 
 | Dimension | Méthode utilisée dans le tableur | Constat (chiffré ou exemple) | Gravité (faible / moyenne / forte) |
 |---|---|---|---|
-| Complétude | `NB.VIDE`, filtre sur *(Vides)* | dans la colonne horaires, 27 occ. absentes | dépend de la question de recherche |
-| Exactitude | Tri, `MIN` / `MAX`, valeurs implausibles |Prix E85 : valeurs plausibles | |
+| Complétude | `NB.VIDE`, filtre sur *(Vides)* | dans la colonne horaires, 27 occ. absentes | forte|
+| Exactitude | Tri, `MIN` / `MAX`, valeurs implausibles |Prix E85 : valeurs plausibles | RAS |
 | Cohérence | Comparaison entre deux colonnes liées | Type rupture e10 et Carburants en rupture definitive : 1 occ de non adéquation (E10 non mentionné dans 1 ligne de la colone Carburant en rupture définitive) | forte |
-| Validité | Filtre : formats hétérogènes dans une colonne | RAS | |
-| Unicité | MFC *Valeurs en double* sur l'identifiant | RAS | |
+| Validité | Filtre : formats hétérogènes dans une colonne | colonne Ville, pas de défaut identifié | RAS |
+| Unicité | MFC *Valeurs en double* sur l'identifiant | colonne id, pas de défaut identifié | RAS |
 | Fraîcheur | Date la plus récente vs date du jour | 2026-09-18T10:29:08+00:00, 18/09/2026| RAS |
 
 ## 4. Proposer des usages
